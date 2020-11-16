@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* border: 2px solid; */
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px gray;
+    margin-top: 20px;
+    background-color: honeydew;
+}
+.header_div{
+    /* border:  2px solid; */
+    text-align: center;
+    margin-top: 20px;
+}
+.balance_div{
+    /* text-align: center; */
+    /* border: 2px solid; */
+}
+.balance_head{
+    margin-top: 30px;
+    /* margin-right: 90px; */
+    margin-left: 40px;
+}
+.balance{
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+.main_income_expense_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.income_div{
+    /* border: 2px solid; */
+    width: 120px;
+    height: 70px;
+    margin: 5px;
+    padding:8px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+}
+.expense_div{
+    /* border: 2px solid; */
+    width: 120px;
+    height: 70px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+
+
+}
+.expense_div>h4,.income_div>h4{
+    margin-top: 8px;
+}
+.history_div>h3{
+    /* border: 2px solid; */
+    margin-top: 30px;
+    width: fit-content;
+
+}
+.history_div{
+    /* border: 2px solid; */
+    width: 400px;
+    margin-left: 30px;
+}
+.history_li_div{
+    /* border: 2px solid; */
+    margin: 15px;
+}
+.history_ul{
+    list-style: none;
+    margin: 10px;
+}
+.history_ul>li{
+   display: flex;
+   justify-content: space-between;
+   background-color: white;
+   padding: 8px 10px;
+   box-shadow: 0 0 10px ;
+   margin: 10px;
+   border-radius: 10px;
+}
+.transaction_head_div{
+    /* border:  2px solid; */
+    margin-top: 30px;
+    /* padding: 28px; */
+    width: 400px;
+    margin-left: 30px;
+    
+
+}
+.transaction_head_div>h3{
+    /* margin-left: 10px; */
+}
+.transaction_form{
+    /* border: 2px solid; */
+    padding: 25px ;
+}
+/* .transaction_form>label{
+ margin-top: 20px;
+} */
+.input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+/* .transaction_form>input{
+    width: 100%;
+    padding: 10px;
+} */
+.input_btn{
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: teal;
+    font-size: 1em;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.green{
+  border-right: 6px solid green;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.red{
+    border-right: 6px solid red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.deleteICon{
+    /* display: none !important; */
+    position: relative;
+    right: 35px;
+    
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteICon:hover{
+  /* display: block !important; */
+  background-color: red;
 }
