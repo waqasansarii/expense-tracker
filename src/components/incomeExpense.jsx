@@ -3,7 +3,7 @@ import { ContextTransaction } from '../context'
 
 
 
-export const Income_Expense = () => {
+export const IncomeExpense = () => {
 
 
     const { transactions } = useContext(ContextTransaction)

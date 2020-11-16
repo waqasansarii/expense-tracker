@@ -1,6 +1,6 @@
 import React from "react";
 import Header from './components/header'
-import { Income_Expense } from './components/incomeExpense'
+import { IncomeExpense } from './components/incomeExpense'
 import { HistoryCom } from './components/history'
 import { Transaction } from './components/transaction'
 import {TransactionProvider} from './context'
@@ -16,7 +16,7 @@ function App() {
           <Header />
         <TransactionProvider >
 
-          <Income_Expense />
+          <IncomeExpense />
           <HistoryCom />
           <Transaction />
 

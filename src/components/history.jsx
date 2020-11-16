@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { ContextTransaction } from '../context'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 
 
 export const HistoryCom = () => {
     let contestTransaction = useContext(ContextTransaction)
-    let { transactions, addition, remove } = contestTransaction
+    let { transactions,  remove } = contestTransaction
     //   console.log(contestTransaction.transactions)
     const handleDelete=(index)=>{
         remove({
