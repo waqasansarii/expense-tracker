@@ -5,7 +5,7 @@ import {ContextTransaction} from '../context'
 
 
 export const Transaction =()=>{
-    let {transactions,addition} = useContext(ContextTransaction)
+    let {addition} = useContext(ContextTransaction)
     let [newDesc,setDesc] = useState('')
     let [newAmount,setAmount] = useState(0)
     // console.log(transactions,addition)
